@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Freelance Rate Card</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* ===============================
+   GLOBAL STYLING
+================================= */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Ensure equal card height */
+.pricing-card {
+    min-height: 500px;
+}
+
+/* Price Section using Flexbox */
+.price-box {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+}
+
+/* Highlight Premium */
+.premium {
+    border: 2px solid gold;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container py-5">
+
+    <!-- Page Heading -->
+    <div class="text-center mb-5">
+        <h1>My Freelance Rate Card</h1>
+        <p class="text-muted">Choose your package wisely 😎</p>
+    </div>
+
+    <!-- Pricing Columns -->
+    <div class="row g-4">
+
+        <!-- ===============================
+             BASIC PACKAGE
+        =============================== -->
+        <div class="col-md-4">
+            <div class="card pricing-card p-3 shadow-sm">
+                <h3 class="text-center">Basic</h3>
+
+                <div class="price-box my-3">
+                    <span class="fs-4">$</span>
+                    <span class="display-6 fw-bold">10</span>
+                </div>
+
+                <p class="text-center">I will fix your HTML</p>
+
+                <table class="table table-striped table-hover text-center">
+                    <tbody>
+                        <tr>
+                            <td>Fix HTML Bugs</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Design</td>
+                            <td>✖</td>
+                        </tr>
+                        <tr>
+                            <td>Full Customization</td>
+                            <td>✖</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="btn btn-dark w-100 mt-auto">Select</button>
+            </div>
+        </div>
+
+        <!-- ===============================
+             STANDARD PACKAGE
+        =============================== -->
+        <div class="col-md-4">
+            <div class="card pricing-card p-3 shadow-sm">
+                <h3 class="text-center">Standard</h3>
+
+                <div class="price-box my-3">
+                    <span class="fs-4">$</span>
+                    <span class="display-6 fw-bold">50</span>
+                </div>
+
+                <p class="text-center">I will make it Responsive</p>
+
+                <table class="table table-striped table-hover text-center">
+                    <tbody>
+                        <tr>
+                            <td>Fix HTML Bugs</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Design</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Full Customization</td>
+                            <td>✖</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="btn btn-dark w-100 mt-auto">Select</button>
+            </div>
+        </div>
+
+        <!-- ===============================
+             PREMIUM PACKAGE
+        =============================== -->
+        <div class="col-md-4">
+            <div class="card pricing-card p-3 shadow-sm premium">
+                <h3 class="text-center text-warning">Premium</h3>
+
+                <div class="price-box my-3">
+                    <span class="fs-4">$</span>
+                    <span class="display-6 fw-bold">100</span>
+                </div>
+
+                <p class="text-center">I will do everything + Chai ☕</p>
+
+                <table class="table table-striped table-hover text-center">
+                    <tbody>
+                        <tr>
+                            <td>Fix HTML Bugs</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Design</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Full Customization</td>
+                            <td>✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="btn btn-warning w-100 mt-auto">Select</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
